@@ -1,0 +1,40 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Texto: Rosman</title>
+  <desc id="desc">Logotipo de texto com letras alternando #333 e um preto clareado (#666)</desc>
+
+  <!-- fundo opcional transparente -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <!-- Grupo com leve sombra para destaque -->
+  <g filter="url(#softShadow)">
+    <text x="50" y="150"
+          font-family="Inter, Poppins, 'Segoe UI', Arial, sans-serif"
+          font-weight="800"
+          font-size="140"
+          letter-spacing="2">
+      <tspan fill="#333">R</tspan>
+      <tspan fill="#666">o</tspan>
+      <tspan fill="#333">s</tspan>
+      <tspan fill="#666">m</tspan>
+      <tspan fill="#333">a</tspan>
+      <tspan fill="#666">n</tspan>
+    </text>
+  </g>
+
+  <!-- Definição de sombra suave -->
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 .25 0" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
