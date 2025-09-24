@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #583831 85.61%);
+}
+
+#topo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 30px;
+}
+
+#logo {
+    width: 50%;
+}
+
+#logo img {
+    height: 80px;
+}   
+
+#menu {
+    display: flex;
+    gap: 32px;
+}
+
+#menu a {
+    color: wheat;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid wheat;
+    transition: 0.2s; 
+    color: #FFF2E7;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+}
+
+#main button {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2F2325;
+  margin-top: 40px;
+}
+
+#main button:hover {
+    background-color: #D4BFAA;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#imagem img {
+    width: 300px;
+    height: 300px;
+}
+
+.hr2 {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#secundario {
+    display: flex;
+    padding: 48px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    gap: 32px;
+    font-size: 15px;
+}
+
+#secundario ol {
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 29px;
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    
+}
+
+
+
+
+/* CSS da página tutorial */
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.video video {
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hr3 {
+    margin-top: 50px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 546px) {
+    #topo {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #logo img {
+        height: 60px;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #main {
+        flex-direction: column;
+        text-align: center;
+        font-size: 24px;
+        gap: 24px;
+    }
+
+    #imagem img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #secundario {
+        font-size: 14px;
+        padding: 24px;
+        gap: 16px;
+    }
+
+    .video video {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 686px) {
+
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+    #topo {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #logo img {
+        height: 60px;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #main {
+        flex-direction: column;
+        text-align: center;
+        font-size: 24px;
+        gap: 24px;
+    }
+
+    #imagem img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #secundario {
+        font-size: 14px;
+        padding: 24px;
+        gap: 16px;
+    }
+
+    .video video {
+        width: 90%;
+        height: auto;
+    }
+}
